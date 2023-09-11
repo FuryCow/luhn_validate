@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |s|
   s.name        = 'LuhnValidate'
-  s.version     = '0.0.0'
+  s.version     = '0.1.0'
   s.summary     = 'Luhn Validate'
   s.description = 'Validate Card PAN by Luhn algorithm'
   s.authors     = ['FuryCow']
