@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'luhn_validate'
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.summary     = 'Luhn Validate'
   s.description = 'Validate Card PAN by Luhn algorithm'
   s.authors     = ['FuryCow']
@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
   s.homepage    =
     'https://rubygems.org/gems/luhn_validate'
   s.license = 'MIT'
+  s.add_development_dependency 'rspec'
 end
