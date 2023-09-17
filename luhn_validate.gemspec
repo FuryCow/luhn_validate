@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'luhn_validate'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.summary     = 'Luhn Validate'
   s.description = 'Validate Card PAN by Luhn algorithm'
   s.authors     = ['FuryCow']

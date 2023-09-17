@@ -4,6 +4,7 @@
 class Luhn
   class CardNotPresentError < StandardError; end
   class PanLengthError < StandardError; end
+  class PanTypeError < StandardError; end
 
   attr_reader :pan_array, :card_size, :valid
 
@@ -15,9 +16,10 @@ class Luhn
 
   def self.validate(pan)
     raise CardNotPresentError, 'Card not present' unless pan
-    raise PanLengthError, 'Wrong pan length' unless (14..19).include? pan.split('').size
+    raise PanTypeError, 'Wrong pan type, pan must be either String or Integer' unless pan.is_a?(String) || pan.is_a?(Integer)
+    raise PanLengthError, 'Wrong pan length' unless (14..19).include? pan.to_s.split('').size
 
-    new(pan)
+    new(pan.to_s)
   end
 
   private
