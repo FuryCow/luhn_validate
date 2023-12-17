@@ -11,5 +11,6 @@ Gem::Specification.new do |s|
   s.homepage    =
     'https://rubygems.org/gems/luhn_validate'
   s.license = 'MIT'
+  s.metadata = { 'source_code_uri' => 'https://github.com/FuryCow/luhn_validate' }
   s.add_development_dependency 'rspec'
 end
